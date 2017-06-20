@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html>
+
+<head>
+		<meta charset="UTF-8">
+		<title>通知公告</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<link href="../../css/utils/common.css" rel="stylesheet" />
+		<link href="../../css/iconfont/iconfont.css" rel="stylesheet" />
+		<link href="../../css/qiuzhi/qiuzhi-questionSub.css" rel="stylesheet" />
+		<link href="../../css/quan/custom-textarea.css" rel="stylesheet" />
+		<style type="text/css">
+			.at {
+				width: 6rem;
+				height: 4rem;
+				padding-left: 1.5rem;
+				padding-top: 0.9rem;
+				float: left;
+				margin-top: -15px;
+			}
+		</style>
+
+	</head>
+
+	<body>
+
+		<nav id="nav_tab" class="mui-bar mui-bar-tab">
+
+			<a id="tabclass" class="mui-tab-item" href="#div-finished">
+
+				<span class="mui-tab-label">发通知</span>
+			</a>
+			<a id="bottom-show" class="mui-tab-item" href="#div-unfinish">
+
+				<span class="mui-tab-label">通知列表</span>
+			</a>
+
+		</nav>
+
+		<div class="mui-slider-group">
+			<div id="div-finished" class="mui-slider-item mui-control-content mui-active">
+				<div class="mui-content" style="background-color: white;">
+					<textarea id="askTitle" name="topic" placeholder="公告标题" style="height: 40px;margin-top: 5px;border-bottom-color: #e4e4e4;overflow:hidden"></textarea>
+					<div class="input-content" style="margin-top: -20px;border-color: white;height: 20rem;">
+						<textarea id="askNote" placeholder="请输入内容（最多2000字）" style="border-color: white;height: 15rem;"></textarea>
+						<div id="take_pic" class="take_pic">
+							<a class="mui-icon iconfont icon-xiangji1"></a>
+						</div>
+
+						<div id="get_gallery" class="get_gallery">
+							<a class="mui-icon iconfont icon-tuku"></a>
+						</div>
+						<div id="get_record" class="get_record">
+							<a class="mui-icon iconfont icon-yuyin3"></a>
+						</div>
+						<div id="take_camero" class="take_camero">
+							<a class="mui-icon iconfont icon-shipin"></a>
+						</div>
+
+					</div>
+
+					<hr style="margin-top: 5px; height:1px;border:none;border-top:1px solid #e4e4e4;" />
+					<p id="atExpert" style="margin-top: 10px;margin-left: 12px;font-size: 14px;color: black;">选择发送给
+						<font id="selectedExpert" style="color: dodgerblue;"></font><span class="mui-icon mui-icon-forward mui-pull-right" style="color: #b7b7b7;"></span></p>
+					<hr style="margin-top: 5px; height:1px;border:none;border-top:1px solid #e4e4e4;" />
+					<div id="pictures" style="width: 100%;"></div>
+					
+					<div class="mui-content-padded">
+				        <button id='register' class="mui-btn mui-btn-block mui-btn-primary" style="background: #13b7f6; border: none ; ">发布</button>
+			        </div>
+
+				</div>
+
+			</div>
+			<div id="div-unfinish" class="mui-slider-item mui-control-content">
+				<ul id="unfinished-list" class="mui-table-view">
+					333
+				</ul>
+
+			</div>
+		</div>
+	</body>
+
+</html>
